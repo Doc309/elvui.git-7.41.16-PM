@@ -57,7 +57,7 @@ local Update = function(self, arg1, arg2)
 	local target, focus = UnitExists("target"), UnitExists("focus")
 
 	if (cast or channel) and showStatus ~= true then
-		FadeFramesInOut(false, frames[self])
+		FadeFramesInOut(true, frames[self])
 	elseif cur ~= max and showStatus ~= true then
 		FadeFramesInOut(true, frames[self])
 	elseif (target or focus) and showStatus ~= true then

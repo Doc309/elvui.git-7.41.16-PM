@@ -92,6 +92,7 @@ L["Keybind Mode"] = "Mode raccourcis"
 L["Keybind Text"] = "Texte des raccourcis"
 L["Low Threshold"] = "Seuil minimal"
 L["Macro Text"] = "Texte sur Macro"
+L["Masque Support"] = true;
 L["Minutes"] = "Minutes"
 L["Mouse Over"] = "Au survol"
 L["Multiply the backdrops height or width by this value. This is usefull if you wish to have more than one bar behind a backdrop."] = "Multiplie la hauteur ou la largeur de l'arrière-plan par cette valeur. Très utile si vous souhaitez avoir une barre de plus en arrière-plan."

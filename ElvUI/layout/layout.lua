@@ -1,7 +1,7 @@
 local E, L, V, P, G = unpack(select(2, ...)); --Inport: Engine, Locales, PrivateDB, ProfileDB, GlobalDB
 local LO = E:NewModule('Layout', 'AceEvent-3.0');
 
-local PANEL_HEIGHT = 26;
+local PANEL_HEIGHT = 22;
 local SIDE_BUTTON_WIDTH = 16;
 
 E.Layout = LO;
@@ -68,12 +68,10 @@ local function ChatButton_OnEnter(self, ...)
 		UIFrameFadeIn(self, 0.2, self:GetAlpha(), 1)
 	end
 
-	if not self.parent.editboxforced then
-		GameTooltip:SetOwner(self, 'ANCHOR_TOPLEFT', 0, 4)
-		GameTooltip:ClearLines()
-		GameTooltip:AddDoubleLine(L["Left Click:"], L["Toggle Chat Frame"], 1, 1, 1)
-		GameTooltip:Show()
-	end
+	GameTooltip:SetOwner(self, 'ANCHOR_TOPLEFT', 0, 4)
+	GameTooltip:ClearLines()
+	GameTooltip:AddDoubleLine(L["Left Click:"], L["Toggle Chat Frame"], 1, 1, 1)
+	GameTooltip:Show()
 end
 
 local function ChatButton_OnLeave(self, ...)
